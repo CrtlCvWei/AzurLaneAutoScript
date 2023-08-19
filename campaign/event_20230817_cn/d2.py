@@ -6,15 +6,16 @@ from .d1 import Config as ConfigBase
 
 MAP = CampaignMap('D2')
 MAP.shape = 'K7'
-MAP.camera_data = ['D2', 'D4', 'H2', 'H4']
+MAP.camera_data = ['D2', 'D4', 'F2', 'H2']
 MAP.camera_data_spawn_point = ['H4']
+MAP.map_covered = ['J5']
 MAP.map_data = """
     -- ME ME ME ++ ME -- -- ME ++ --
     ME -- -- -- -- -- ++ ++ -- -- Me
     ++ -- Me Me __ ME ++ ++ ME __ --
     ME -- -- MS -- MS MB MB MS -- MS
     -- Me -- -- -- -- -- -- -- -- --
-    ++ ++ Me -- ME -- SP SP -- -- --
+    ++ ++ Me -- ME -- SP SP -- ++ --
     -- ++ -- ++ ++ ++ -- -- -- -- --
 """
 MAP.weight_data = """
@@ -25,6 +26,21 @@ MAP.weight_data = """
     50 50 50 50 50 50 50 50 50 50 50
     50 50 50 50 50 50 50 50 50 50 50
     50 50 50 50 50 50 50 50 50 50 50
+"""
+MAP.wall_data = """
+    ·   · | ·   ·   ·   ·   ·   ·   ·   ·   · ,
+          +                                   ,
+    ·   ·   ·   ·   ·   ·   ·   ·   ·   · | · ,
+          +       +   +               +   +   ,
+    ·   · | ·   · | · | ·   ·   ·   · | ·   · ,
+          +---+---+   |               |   +   ,
+    ·   ·   · | ·   · | ·   ·   ·   · | · | · ,
+              +---+   +---+       +---+   +-- ,
+    ·   ·   ·   ·   ·   ·   ·   ·   ·   ·   · ,
+                                              ,
+    ·   ·   ·   ·   ·   ·   ·   ·   ·   ·   · ,
+                                              ,
+    ·   ·   ·   ·   ·   ·   ·   ·   ·   ·   · ,
 """
 MAP.spawn_data = [
     {'battle': 0, 'enemy': 2, 'siren': 2},
@@ -57,6 +73,11 @@ class Config(ConfigBase):
     MAP_HAS_MYSTERY = False
     # ===== End of generated config =====
 
+    MAP_HAS_WALL = True
+    MAP_SWIPE_MULTIPLY = (1.125, 1.146)
+    MAP_SWIPE_MULTIPLY_MINITOUCH = (1.088, 1.108)
+    MAP_SWIPE_MULTIPLY_MAATOUCH = (1.056, 1.075)
+
 
 class Campaign(CampaignBase):
     MAP = MAP
@@ -65,7 +86,7 @@ class Campaign(CampaignBase):
     def battle_0(self):
         if self.clear_siren():
             return True
-        if self.clear_filter_enemy(self.ENEMY_FILTER, preserve=1):
+        if self.clear_filter_enemy(self.ENEMY_FILTER, preserve=0):
             return True
 
         return self.battle_default()
