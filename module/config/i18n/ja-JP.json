@@ -419,8 +419,7 @@
       "uiautomator2": "uiautomator2",
       "minitouch": "minitouch",
       "Hermit": "Hermit",
-      "MaaTouch": "MaaTouch",
-      "nemu_ipc": "nemu_ipc"
+      "MaaTouch": "MaaTouch"
     },
     "ScreenshotDedithering": {
       "name": "Emulator.ScreenshotDedithering.name",
@@ -703,7 +702,7 @@
       "event_20211125_cn": "弧光は交わる世界にて（復刻）",
       "event_20211229_cn": "遡望せし虹彩の塔（復刻）",
       "event_20220210_cn": "凍絶の北海（復刻）",
-      "event_20220224_cn": "鳴動せし星霜の淵",
+      "event_20220224_cn": "鳴動せし星霜の淵（復刻）",
       "event_20220310_tw": "復刻斯圖爾特的硝煙",
       "event_20220324_cn": "幻像の塔（復刻）",
       "event_20220407_tw": "蒼紅的迴響(復刻)",
@@ -724,6 +723,7 @@
       "event_20231123_cn": "蒼閃忍法帖",
       "event_20231221_cn": "光追う星の海",
       "event_20240229_cn": "銀界遊廻",
+      "event_20240425_cn": "共鳴のパッション",
       "raid_20200624": "特別演習超空強襲波（復刻）",
       "raid_20210708": "交錯する新たな波 (復刻)",
       "raid_20220127": "秘密事件調査",
@@ -796,13 +796,13 @@
       "name": "StopCondition._info.name",
       "help": "StopCondition._info.help"
     },
-    "RunCount": {
-      "name": "StopCondition.RunCount.name",
-      "help": "StopCondition.RunCount.help"
-    },
     "OilLimit": {
       "name": "StopCondition.OilLimit.name",
       "help": "StopCondition.OilLimit.help"
+    },
+    "RunCount": {
+      "name": "StopCondition.RunCount.name",
+      "help": "StopCondition.RunCount.help"
     },
     "MapAchievement": {
       "name": "StopCondition.MapAchievement.name",
