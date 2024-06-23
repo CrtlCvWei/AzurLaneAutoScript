@@ -1635,7 +1635,8 @@
       "ServerUpdate": "00:00"
     },
     "OpsiShop": {
-      "BuySupply": true
+      "PresetFilter": "max_benefit_meta",
+      "CustomFilter": "Logger"
     },
     "Storage": {
       "Storage": {}
