@@ -375,6 +375,8 @@
       "cn_android-23": "[国服] 长戟计划",
       "cn_android-24": "[国服] 暴雨行动",
       "cn_android-25": "[国服] 水仙行动",
+      "cn_android-26": "[国服] 冬月计划",
+      "cn_android-27": "[国服] 长弓计划",
       "cn_ios-0": "[国服] 夏威夷",
       "cn_ios-1": "[国服] 珊瑚海",
       "cn_ios-2": "[国服] 中途岛",
@@ -753,6 +755,7 @@
       "event_20241219_cn": "Substellar Crepuscule",
       "event_20250227_cn": "Paradiso of Shackled Light",
       "event_20250424_cn": "Toward Tulipa’s Seas",
+      "event_20250520_cn": "A Rose on the High Tower",
       "raid_20200624": "Air Raid Drills with Essex Rerun",
       "raid_20210708": "Cross Wave rerun",
       "raid_20220127": "Mystery Investigation",
@@ -2057,7 +2060,8 @@
       "help": "Select the target ship girl for interaction sequence",
       "anchorage": "Anchorage",
       "noshiro": "Noshiro",
-      "sirius": "Sirius"
+      "sirius": "Sirius",
+      "new_jersey": "New Jersey"
     }
   },
   "Daily": {

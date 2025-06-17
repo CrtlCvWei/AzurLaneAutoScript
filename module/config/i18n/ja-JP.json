@@ -375,6 +375,8 @@
       "cn_android-23": "[国服] 长戟计划",
       "cn_android-24": "[国服] 暴雨行动",
       "cn_android-25": "[国服] 水仙行动",
+      "cn_android-26": "[国服] 冬月计划",
+      "cn_android-27": "[国服] 长弓计划",
       "cn_ios-0": "[国服] 夏威夷",
       "cn_ios-1": "[国服] 珊瑚海",
       "cn_ios-2": "[国服] 中途岛",
@@ -753,6 +755,7 @@
       "event_20241219_cn": "星降る夕影の残光",
       "event_20250227_cn": "籠檻に囚われし神光",
       "event_20250424_cn": "チュリッパの海へ",
+      "event_20250520_cn": "高い塔の薔薇",
       "raid_20200624": "特別演習超空強襲波（復刻）",
       "raid_20210708": "交錯する新たな波 (復刻)",
       "raid_20220127": "秘密事件調査",
@@ -2057,7 +2060,8 @@
       "help": "PrivateQuarters.TargetShip.help",
       "anchorage": "anchorage",
       "noshiro": "noshiro",
-      "sirius": "sirius"
+      "sirius": "sirius",
+      "new_jersey": "new_jersey"
     }
   },
   "Daily": {
